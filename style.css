@@ -1,0 +1,115 @@
+html, body {
+    background-color: rgb(244, 242, 215);
+    margin: 0;
+    padding: 0;
+}
+
+.bg-img {
+    max-height: 300px;
+    max-width: none;
+    width: 100%;
+}
+
+.Top-head {
+    background-color: rgb(225, 187, 97);
+    padding: 15px;
+    margin: auto;
+    /* max-height: 30px; */
+    box-shadow: 2px 2px 4px 2px rgb(227, 169, 92);
+}
+
+.Head {
+    color: rgb(64, 42, 42);
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.Top {
+    padding: 15px;
+    font-size: 30px;
+    font-weight: 600px;
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+    max-height: 550px;
+}
+
+.main2 {
+    margin: auto;
+    margin: 20px;
+}
+
+.blog {
+    max-width: 550px;
+    background-color: rgb(239, 217, 187);
+    padding : 20px;
+    margin: 35px;
+    box-shadow: 3px 3px 6px 3px rgb(215, 182, 139);
+    border: 1px;
+    animation-duration: 500ms;
+}
+
+.blog2 {
+    width: 750px;
+    margin: auto;
+    background-color: rgb(239, 217, 187);
+    padding: 40px;
+}
+
+.image {
+    width: 100%;
+    height: 300px;
+}
+
+.lm {
+    text-decoration: none;
+    display: inline-block;
+    transition: all ease 0.3s;
+    float: right;
+    color: blue;
+}
+
+.ind {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    /* position:relative; */
+    text-indent: 3em;
+    margin: 20px 0px;
+}
+
+.ind::before {
+    text-indent: 3em;
+    margin: 20px 0px;
+}
+
+.h2 {
+    font-size: 1.25em;
+}
+
+.rm {
+    appearance: none;
+    cursor: pointer;
+    color: blue;
+}
+
+.rm::before {
+    content: "Read more";
+}
+
+.rm:checked::before {
+    content: "Read less";
+}
+
+.ind:has(+ .rm:checked) {
+    -webkit-box-orient: inline-axis;
+}
